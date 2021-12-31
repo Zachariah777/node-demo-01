@@ -19,11 +19,6 @@ var server = http.createServer(function(request, response){
   /******** 从这里开始看，上面不要看 ************/
 
   console.log('有位用户发送了个请求路径（带查询参数）为：' + pathWithQuery);
-  console.log("path:" + path)
-  console.log(path === "/css")
-  console.log(path === "/js")
-
-
 
   if(path === '/'){
     response.statusCode = 200;
